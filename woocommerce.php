@@ -32,9 +32,14 @@ if ( ! class_exists( 'WooCommerce' ) ) {
  * Returns the main instance of WC to prevent the need to use globals.
  *
  * @since  2.1
+ * @since 3.2 Added variable for .
+
  * @return WooCommerce
  */
 function wc() {
+
+	$a = '1';
+
 	return WooCommerce::instance();
 }
 
